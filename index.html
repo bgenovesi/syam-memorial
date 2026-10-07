@@ -103,17 +103,21 @@
 
   <p class="deadline"><span>Upload by</span><br />Wednesday, October 14</p>
 
-  <form class="upload" name="syam-photos" method="POST" data-netlify="true"
-        enctype="multipart/form-data" netlify-honeypot="bot-field" action="/thanks.html">
-    <input type="hidden" name="form-name" value="syam-photos" />
-    <p class="hidden"><input name="bot-field" tabindex="-1" autocomplete="off" /></p>
+  <form class="upload" name="syam-photos" method="POST"
+        action="https://formsubmit.co/bennett@genovesi.us"
+        enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="New photo for Syam's montage" />
+    <input type="hidden" name="_template" value="box" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://bgenovesi.github.io/syam-memorial/thanks.html" />
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
     <label for="name">Your name <span class="opt">(optional)</span></label>
     <input type="text" id="name" name="name" placeholder="So we know who to thank" />
 
     <label>Photos</label>
     <div class="dropzone" id="dropzone">
-      <input type="file" id="photos" name="photos" accept="image/*" multiple required />
+      <input type="file" id="photos" name="attachment" accept="image/*" multiple required />
       <div class="big">Choose photos or drag them here</div>
       <div>You can select more than one &middot; JPG, PNG, HEIC</div>
       <div class="filelist" id="filelist"></div>
